@@ -9,15 +9,17 @@ from core.app1 import models
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
-    
+
     username = fake.name()
     is_staff = 'True'
+
 
 class CategoryFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = models.Category
-    
+
     name = 'django'
+
 
 class ProductFactory(factory.django.DjangoModelFactory):
     class Meta:
